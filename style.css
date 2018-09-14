@@ -1,8 +1,6 @@
-/*body, html {
-	height : 100%;
-	margin : 0% 0% 0% 0%;
-	border : none;
-}*/
+body {
+	background-color : #f3f1ef;
+}
 
 #pic {
 	padding : 0% 0% 0% 0%; 
@@ -21,22 +19,36 @@
 }
 
 .navbar {
-	opacity : 0.1;
-	background-color : #bdc3c7;
+	border-radius : 0px;
+}
+
+.navbar-fixed-top {
+	background-color : rgba(52, 73, 94, 0.25);
 }
 
 .scrolled {
   opacity : 0.9;
-  background-color : #bdc3c7;
+  background-color :rgba(52, 73, 94, 1);
   transition : background-color 200ms linear;
 }
 
 .navbar .navbar-brand {
 	font-family : 'Questrial', sans-serif;
+	color : white;
+	text-shadow : none;
 }
 
 .navbar .dropdown {
 	font-family : 'Questrial', sans-serif;
+	color : white;
+	text-shadow : none;
+}
+
+
+.dropdown-toggle {
+	font-family : 'Questrial', sans-serif;
+	color : white;
+	text-shadow : none;
 }
 
 #pic .thumbnail {
@@ -46,14 +58,14 @@
 	border : none;
 }
 
-.thumbnail .text-center{
+.thumbnail .text-center {
 	margin : 0% 0% 0% 0%;
 	padding : 0% 0% 0% 0%;
 }
 
 .caption p {
 	position : absolute;
-	top : 45%;
+	top : 40%;
 	left : 0;
 	width : 100%;
 	font-family : 'Abril Fatface', sans-serif;
@@ -62,6 +74,12 @@
 	font-size : 12vw;
 	padding : 0%;
 	margin : 0%;
+	letter-spacing: .04em;
+}
+
+p {
+	font-family : 'Questrial', sans-serif;
+	padding-top : 10%;
 }
 
 #welcome   {
@@ -79,18 +97,125 @@
 	padding : 2%;
 	height : 20%;
 	text-align : center;
+	position : relative;
+	margin : 0 auto;
 }
 
 #icons1 {
 	padding-top : 10%;
 }
 
+.overlay {
+	position : absolute;
+	top : 0;
+	bottom : 0;
+	right : 0;
+	left : 0;
+	height : 100%;
+	width : 100%;
+	opacity : 0;
+	transition : 0.5s ease;
+	background-color: #d9a390;
+}
+
+.nouns:hover .overlay {
+	opacity : 0.85;
+}
+
+.nouns:hover .icons{
+	opacity : 0.25;
+}
+
+.text {
+	color : white;
+	position: absolute;
+  top : 50%;
+  left : 50%;
+  transform: translate(-50%, -50%);
+  float : left;
+ 	font-family : 'Questrial', sans-serif;
+ 	font-size : 20px;
+ 	line-height : 100%;
+}
+
+.text .sub-text {
+	color : #6c7a89;
+	font-size : 15px;
+	line-height : 100%;
+}
+
 body h1 {
-	margin-left : 5%;
-	font-family : 'Quattrocento', serif;
+	font-family : 'Abril Fatface', sans-serif;
+	transform: translate(-50%, -50%);
+	float : left;
+	position : absolute;
+	margin-top: 5%;
+	margin-left : 10%;
+	margin bottom : 10%;
+	letter-spacing : 0.04em;
 }
 
 #about {
 	font-family : 'Questrial', sans-serif;
 }
 
+#toTravel { 
+padding-left : 20%; 
+}
+
+#tr {
+	background-color : rgba(255, 236, 208, 0.5);
+	width : 100%;
+	margin : 0%;
+	padding : 0%;
+}
+
+ul {
+	list-style-type: circle;
+}
+
+.places {
+ 	font-family : 'Questrial', sans-serif;
+ 	padding-left : 20% 
+ }
+
+#suggestedPlaces {
+	padding-left : 10% 
+}
+
+#suggestion {
+	width : 50%;
+}
+
+.listTitle {
+	font-family : 'Questrial', sans-serif;
+	font-size : 20px;
+}
+
+.bottom {
+	overflow: hidden;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-image : none;
+	background-color : #d9a390;
+	width : 100%;
+	margin-bottom : 0%;
+	border : none;
+	border-radius : 0px;
+}
+
+.bottomLink {
+	font-family : 'Questrial', sans-serif;
+	color : white;
+	text-shadow : none;
+}
+
+.bottom .navbar-brand {
+	font-family : 'Abril Fatface', sans-serif;
+	text-shadow : none;
+}
+
+.spotify {
+	padding : 10%;
+}
